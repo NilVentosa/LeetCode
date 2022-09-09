@@ -29,10 +29,6 @@ public class NumberOfWeakCharacters {
             }
         });
 
-        for (int[] thing: properties)  {
-            System.out.println(thing[0] + "," + thing[1]);
-        }
-
         int result = 0;
         int maxDef = properties[0][1];
 
@@ -42,9 +38,5 @@ public class NumberOfWeakCharacters {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        new NumberOfWeakCharacters().numberOfWeakCharacters(new int[][]{{1,2},{3,4},{1,1},{9,9},{3,5},{3,11}});
     }
 }
